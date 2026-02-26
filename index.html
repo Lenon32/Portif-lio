@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <header>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contato</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main id="inicio" class="cabecalho section">
+        <h1>Lenon Santana</h1>
+        <h2>Desenvolvedor Full Stack em formação</h2>
+        <p class="cabecalho-sub-titulo"> HTML5 • CSS3 • JavaScript • Node.js</p>
+        <div class="carousel">
+            <div class="slides">
+                <img src="./imagens/imagemcarrosel1.png" class="slide active">
+                <img src="./imagens/imagemcarrosel2.png" class="slide">
+                <img src="./imagens/imagemcarrosel3.png" class="slide">
+            </div>
+        </div>
+    </main>
+    
+
+    <section id="sobre" class="sobre section">
+        <div class="sobre-caixa">
+            <h2 class="sobre-titulo">Sobre Mim</h2>
+
+            <p class="sobre-paragrafo">
+                Atualmente graduando em Engenharia de Software (4º período) e participante do Curso Profissionalizante
+                SCTec, programa governamental voltado à formação tecnológica e capacitação profissional. Encontro-me em
+                transição de carreira e totalmente comprometido com a área de tecnologia.
+            </p>
+
+            <p class="sobre-paragrafo">
+                A programação é hoje um dos principais focos da minha trajetória, impulsionando-me a aprender
+                continuamente, enfrentar desafios técnicos e construir projetos que aprimorem minhas habilidades
+                técnicas e analíticas.
+            </p>
+
+            <p class="sobre-paragrafo">
+                Busco minha primeira experiência profissional em desenvolvimento, onde eu possa transformar conhecimento
+                em prática, colaborar em equipe, evoluir tecnicamente e participar ativamente da construção de soluções
+                modernas e eficientes.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos section">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+
+        <div class="projetos-caixa">
+
+            <a href="./projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard1.png" alt="Projeto 1" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Sistema de Gestão Comercial</h3>
+                    <p class="paragrafo-projetos">Aplicação web para controle de produtos, vendas e relatórios gerenciais. <strong>(Projeto Conceitual)</strong></p>
+                </div>
+            </a>
+
+            <a href="../projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard2.png" alt="Projeto 2" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Dashboard Analítico</h3>
+                    <p class="paragrafo-projetos">DPainel interativo para visualização de métricas e indicadores em tempo real. <strong>(Projeto Conceitual)</strong></p>
+                </div>
+            </a>
+
+            <a href="./projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard5.png" alt="Projeto 3" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Landing Page Responsiva</h3>
+                    <p class="paragrafo-projetos">Página moderna otimizada para conversão e adaptação em múltiplos dispositivos. <strong>(Projeto Conceitual)</strong></p>
+                </div>
+            </a>
+
+            <a href="./projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard3.png" alt="Projeto 4" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">API de Cadastro de Usuários</h3>
+                    <p class="paragrafo-projetos">Serviço backend para gerenciamento de usuários com validações e rotas REST. <strong>(Projeto Conceitual)</strong><p>
+                </div>
+            </a>
+
+            <a href="./projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard4.png" alt="Projeto 5" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Aplicação de Lista de Tarefas</h3>
+                    <p class="paragrafo-projetos">Ferramenta dinâmica para organização de atividades com persistência de dados. <strong>(Projeto Conceitual)</strong></p>
+                </div>
+            </a>
+
+            <a href="./projetos/projeto1/index.html" class="projetos-card"
+                target="_blank">
+                <img src="./imagens/imagemcard5.png" alt="Projeto 6" class="projetos-imagem">
+
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Portal Institucional</h3>
+                    <p class="paragrafo-projetos">Website corporativo com foco em apresentação, navegação clara e usabilidade. <strong>(Projeto Conceitual)</strong></p>
+            
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section id="contatos" class="contato-section">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" id="mensagem" rows="4"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar WhatsApp</button>
+        </form>
+
+        <div>
+            <div class="contato-item">
+                <strong>Email:</strong>
+                <span>lenonsantanavi@gmail.com</span>
+            </div>
+            <div class="contato-item">
+                <strong>Telefone:</strong>
+                <span>(48)99834-5676</span>
+            </div>
+            <div class="contato-item">
+                <strong>Localização:</strong>
+                <span>Florianópolis - SC</span>
+            </div>
+        </div>
+    </section>
+   <footer class="footer">
+    <div class="footer-conteudo">
+        <strong>© <span id="ano"></span> DevPortfólio - Lenon Santana</strong>
+    </div>
+</footer>
+
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5548998345676'
+
+            const texto = `Olá! Me chamo ${nome}. ${mensagem}`
+            const msgFormatada = encodeURIComponent(texto)
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`
+
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+
+</html>
